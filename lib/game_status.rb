@@ -25,7 +25,7 @@ end
 
 
 def full?(board)
-  board.all do |full_board|
+  board.all do ||
     if position_taken == full_board
       true
     else
