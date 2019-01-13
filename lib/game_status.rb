@@ -15,14 +15,15 @@ WIN_COMBINATIONS = [
   [6,4,2]
   ]
   
+
+
 def won?(board)
-  WIN_COMBINATIONS.detect do |win|
-    board[win[0]] == board[win[1]] &&
-    board[win[1]] == board[win[2]] &&
-    position_taken(board, win[0])
+  WIN_COMBINATIONS.detect do |combo|
+    board[combo[0]] == board[combo[1]] &&
+    board[combo[1]] == board[combo[2]] &&
+    position_taken?(board, combo[0])
   end
 end
-
 def full?(board)
   board.all?{|char| char == "X" || char == "O"}
 end
