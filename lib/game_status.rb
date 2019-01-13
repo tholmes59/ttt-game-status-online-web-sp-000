@@ -29,3 +29,6 @@ def full?(board)
   board.all?{|char| char == "X" || char == "O"}
 end
 
+def draw?(board)
+  
+end
