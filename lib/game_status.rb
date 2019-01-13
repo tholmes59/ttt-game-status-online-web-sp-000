@@ -23,6 +23,9 @@ def won?(board)
   end
 end
 
+def full?(board)
+  board.all?{|char| char == "X" || char == "O"}
+end
 
 def full?(board)
   board.all? do |char|
