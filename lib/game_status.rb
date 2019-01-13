@@ -27,7 +27,4 @@ end
 def full?(board)
   board.all do |char|
     if char == "X" || char == "0"
-    
-    end
-  end
 end
