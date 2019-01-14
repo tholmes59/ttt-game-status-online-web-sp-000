@@ -14,8 +14,6 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [6,4,2]
   ]
-  
-
 
 def won?(board)
   WIN_COMBINATIONS.find do |win|
@@ -38,4 +36,6 @@ def over?(board)
 end
 
 def winner(board)
+  if win_combination = won?(board)
+    win_combination(board[0])
 end
